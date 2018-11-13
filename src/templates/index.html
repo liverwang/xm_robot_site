@@ -1,0 +1,65 @@
+<%- include('_global/head') %>
+<%- include('_global/nav', { nav: { name: 'index' } }) %>
+
+<div class="home">
+  <div class="banner-wrapper" id="banner">
+    banner图片区
+  </div>
+  <div class="news-banner-outter">
+    <div class="news-banner-wrapper container">
+      <div class="left-line-cloud line-cloud"></div>
+      <div class="right-line-cloud line-cloud"></div>
+      <div class="news-banner row">
+        <div class="news-banner-left col-xs-12 col-sm-3">
+          <img src="images/cloud.png" />
+          <div class="news-title">
+            新 · 闻 · 中 · 心
+          </div>
+          <div class="en-news-title">[ News Center ]</div>
+        </div>
+        <div class="news-banner-content-wrapper col-xs-12 col-sm-7" id="news_title">
+        </div>
+        <div class="news-banner-right col-xs-12 col-sm-2">
+          <div class="more-btn-wrapper">
+            <a class="more-btn" href="/news.html">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="item-wrapper container art-things">
+    <div class="item-content">
+      <div class="collections-wrapper">
+        <div class="collection-wrapper vertical-collection-wrapper">
+          <a href="/collection.html?type=4" >
+            <img class="collection-hover" src="images/home_img_yuqi.png" />
+          </a>
+          <a href="/collection.html?type=1">
+            <img class="collection-hover" src="images/home_img_muqi.png" />
+          </a>
+        </div>
+        <div class="collection-wrapper">
+          <a href="/collection.html?type=2">
+            <img class="collection-hover" src="images/home_img_tongqi.png" />
+          </a>
+        </div>
+        <div class="collection-wrapper vertical-collection-wrapper">
+          <a href="/collection.html?type=0">
+            <img class="collection-hover" src="images/home_img_ciqi.png" />
+          </a>
+          <a href="/collection.html?type=5">
+            <img class="collection-hover" src="images/home_img_zaxiang.png" />
+          </a>
+        </div>
+      </div>
+      <div class="collection-more-btn-wrapper">
+        <a class="collection-more-btn" href="/collection.html">MORE</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="home-footer">
+  <%- include('_global/foot', { size: ''}) %>
+</div>
+
+

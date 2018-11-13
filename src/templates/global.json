@@ -1,0 +1,14 @@
+{
+    "site": "",
+    "description": "",
+    "keywords": "",
+    "styles": [
+        "//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css",
+        "//cdn.bootcss.com/animate.css/3.5.2/animate.min.css"
+    ],
+    "scripts": [
+        "//cdn.bootcss.com/jquery/1.11.1/jquery.min.js",
+        "//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js",
+        "/static/js/wow.js"
+    ]
+}

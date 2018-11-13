@@ -1,0 +1,272 @@
+
+html, body {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  //margin-top: @header-height;
+  overflow-x: hidden;
+}
+
+body{
+  padding-top: @header-height;
+  zoom: 0.8 !important;
+}
+
+
+p {
+  margin: 0 0;
+}
+
+.navbar {
+  min-height: @header-height;
+  margin-bottom: 0;
+  .navbar-header {
+    .navbar-brand {
+      height: @header-height;
+      line-height: @header-height;
+      padding: 0;
+      margin-right: 130px;
+
+      img {
+        display: inline;
+      }
+      .site-logo {
+        width: 50px;
+        height: 50px;
+      }
+      .site-logo_name{
+        height: 50px;
+      }
+    }
+    .navbar-toggle {
+      margin-top: 30px;
+    }
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      position: relative;
+      li {
+        a {
+          height: @header-height;
+          box-sizing: border-box;
+          padding: 0 12px;
+
+          .nav_title {
+            padding: 36px 3px;
+            text-align: center;
+
+            p:first-child {
+              font-size: 18px;
+              color: #333333;
+              font-size:18px;
+              font-family:'STSongti-SC-Bold';
+              color:rgba(51,51,51,1);
+              line-height:25px;
+            }
+            p:last-child {
+              font-size: 10px;
+              color: #999999;
+              margin-top: 5px;
+              font-family: 'Athelas-Regular';
+            }
+          }
+        }
+
+        &.active,
+        &:hover {
+          color: #BF885E;
+
+          a {
+            background: transparent;
+
+            .nav_title {
+              p:first-child {
+                color: #BF885E;
+              }
+              p:last-child {
+                color: #BF885E;
+              }
+            }
+          }
+        }
+
+        &::after {
+          content: " ";
+          position: absolute;
+          height: 16px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          background-image: url(../images/nav_active.png);
+          display: none;
+        }
+        &.active::after{
+          display: inline;
+        }
+      }
+
+    }
+  }
+}
+
+.point {
+  color: #aaaaaa;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #aaaaaa;
+  margin: 6px auto;
+}
+
+.loading {
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  text-align: center;
+
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+
+  div {
+    width: 24px;
+    height: 24px;
+    background: #33aacc;
+    border-radius: 100%;
+    display: inline-block;
+    animation: slide 1s infinite;
+
+    &:nth-child(1) {
+      animation-delay: 0.1s;
+      background: #32aacc;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+      background: #64aacc;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.3s;
+      background: #96aacc;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.4s;
+      background: #c8aacc;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.5s;
+      background: #faaacc;
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+.page-face{
+  img{
+    width: 100%;
+  }
+}
+
+.breadcrum {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #999999;
+  text-align:left;
+
+  div, p, a {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #999999;
+  }
+  p {
+    margin: 0 6px;
+  }
+  .name {
+    color: #AE6B38;
+  }
+}
+
+.slick-slide{
+  &:focus{
+    outline-style: none;
+  }
+}
+
+.text-overflow-ellipsis(@line-clamp: 1) {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line-clamp;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    zoom: 1!important;
+  }
+  .navbar {
+    .navbar-header{
+      .navbar-brand {
+        display: inline;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+
+    .navbar-collapse {
+      max-height: 1000px;
+
+      .navbar-nav {
+        li {
+          a {
+            height: 60px;
+            .nav_title {
+              padding-top: 6px;
+              padding-bottom: 6px;
+            }
+          }
+
+          &::after, &.active::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .breadcrum {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1200px) and (min-width:750px) {
+  .navbar {
+    .navbar-header{
+      display: none;
+    }
+  }
+}
+
+a[title='站长统计']{
+  display: none;
+}

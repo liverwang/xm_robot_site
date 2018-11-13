@@ -1,0 +1,33 @@
+// base
+@font-size-base         : 14px;
+@font-size-lg           : @font-size-base + 2px;
+@font-size-sm           : 12px;
+@line-height-base       : 1.5;
+
+// color
+@color-title: #262626;
+@color-primary: #595959;
+@color-secondary: #8c8c8c;
+@color-disable: #bfbfbf;
+@color-border: #d9d9d9;
+@color-divider: #e8e8e8;
+@color-background: #f5f5f5;
+@color-table-header: #fafafa;
+
+// vertical paddings
+@padding-lg    : 24px; // containers
+@padding-md    : 16px; // small containers and buttons
+@padding-sm    : 12px; // Form controls and items
+@padding-xs    : 8px;  // small items
+
+// global layout
+@header-height: 110px;
+@banner-height: 700px;
+@title-height: 228px;
+@footer-height: 600px;
+@footer-height-small: 469px;
+
+/* mixins */
+._resize(@style, @px) {
+  @{style}: @px / 1920 * 100%;
+}

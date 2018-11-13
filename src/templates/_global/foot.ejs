@@ -1,0 +1,60 @@
+<div class="footer <%= size %>">
+  <div class="footer-bg" ></div>
+  <div class="footer-link-wrapper">
+    <a target="_blank" href="http://www.cang.com/">华夏收藏网</a>
+    <a target="_blank" href="http://www.artron.net/">雅昌收藏网</a>
+    <a target="_blank" href="https://www.epailive.com/">易拍全球</a>
+    <a target="_blank" href="http://www.baozang.com/">宝藏网</a>
+    <a target="_blank" href="http://www.gucn.com/">中华古玩网</a>
+  </div>
+  <div class="qr-code-wrapper">
+    <div class="qr-code">
+      <img src="images/img_bottom_guwancheng.png" />
+      <p>杭州古玩城官方微信</p>
+    </div>
+    <div class="qr-code">
+      <img src="images/img_bottom_shuhuayuan.png" />
+      <p>金诚书画院官方微信</p>
+    </div>
+  </div>
+  <div class="contact-wrapper">
+    <div>
+      <span class="phone-icon"></span>
+      <span>0571-87883791</span>
+    </div>
+    <div>
+      <span class="address-icon"></span>
+      <span>浙江省杭州市上城区仁和路1号</span>
+    </div>
+    <div>
+      <span class="information-icon"></span>
+      <span>Copyright © 苏ICP备18023698号-3 杭州古玩城</span>
+    </div>
+  </div>
+</div>
+
+<%  scripts.forEach(function (js) {  %>
+<script defer="defer" src="<%= js %>"></script>
+<%  })  %>
+
+<%  if (local.scripts) {
+      local.scripts.forEach(function(js){  %>
+<script defer="defer" src="<%= js %>"></script>
+<%  })
+  }
+%>
+
+<!-- <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?e37938fb9cc70d6aead1069fe10c6f71";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script> -->
+
+<script src="https://s13.cnzz.com/z_stat.php?id=1274109448&web_id=1274109448" language="JavaScript"></script>
+
+</body>
+</html>
