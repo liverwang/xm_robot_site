@@ -1,35 +1,270 @@
 <%- include('_global/head') %>
 <%- include('_global/nav', { nav: { name: 'index' } }) %>
 
-<div class="home">
-  <div class="banner-wrapper" id="banner">
-    banner图片区
-  </div>
-  <div class="news-banner-outter">
-    <div class="news-banner-wrapper container">
-      <div class="left-line-cloud line-cloud"></div>
-      <div class="right-line-cloud line-cloud"></div>
-      <div class="news-banner row">
-        <div class="news-banner-left col-xs-12 col-sm-3">
-          <img src="images/cloud.png" />
-          <div class="news-title">
-            新 · 闻 · 中 · 心
-          </div>
-          <div class="en-news-title">[ News Center ]</div>
+<div class="wrapper">
+  <div class="section banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text">
+          <div class="title">小蜜AI机器人</div>
+          <div class="subtitle">永不疲倦的电销专员，3秒标记精准意向客户</div>
+          <ul class="functions">
+            <li>话术定制</li>
+            <li>智能标记</li>
+            <li>全真人声</li>
+            <li>免费试用</li>
+          </ul>
+          <div class="trial">点击免费体验</div>
         </div>
-        <div class="news-banner-content-wrapper col-xs-12 col-sm-7" id="news_title">
-        </div>
-        <div class="news-banner-right col-xs-12 col-sm-2">
-          <div class="more-btn-wrapper">
-            <a class="more-btn" href="/news.html">More</a>
+        <div class="col-md-4 image">
+          <div class="image-circle">
+            <img src="../images/home/1.png" class="background">
+            <img src="../images/home/2.png" class="inner">
+            <img src="../images/home/3.png" class="outer">
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="home-footer">
-  <%- include('_global/foot', { size: ''}) %>
+<div class="wrapper">
+  <div class="section function">
+    <div class="container">
+      <div class="row">
+        <ul class="functions">
+          <li class="functions-item">
+            <div class="title">真人语音</div>
+            <div class="desc">真人语音颠覆传统死板的机器人发音</div>
+          </li>
+          <li class="functions-item">
+            <div class="title">智能学习</div>
+            <div class="desc">基于大数据算法通过问题学习自我完善话术</div>
+          </li>
+          <li class="functions-item">
+            <div class="title">情绪判断</div>
+            <div class="desc">通过客户语气情绪识别客户的意向</div>
+          </li>
+          <li class="functions-item">
+            <div class="title">数据分析</div>
+            <div class="desc">通过人工智能算法准确筛选意向客户</div>
+          </li>
+          <li class="functions-item">
+            <div class="title">算法模型</div>
+            <div class="desc">定制个性化话术模型智能匹配相关话术</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section voice">
+    <div class="container">
+      <div class="title">真实通话试听</div>
+      <div class="row voices">
+        <div class="col-md-3 ">
+          <div class="voices-item">
+            <img src="../images/home/18.png">
+            <div class="name">教育行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item">
+            <img src="../images/home/19.png">
+            <div class="name">房产行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item">
+            <img src="../images/home/20.png">
+            <div class="name">教育行业</div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="voices-item">
+            <img src="../images/home/21.png">
+            <div class="name">品牌推广</div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="voices-item">
+            <img src="../images/home/22.png">
+            <div class="name">装修行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item">
+            <img src="../images/home/23.png">
+            <div class="name">房产行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item">
+            <img src="../images/home/23.png">
+            <div class="name">教育行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item">
+            <img src="../images/home/24.png">
+            <div class="name">品牌推广</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section product">
+    <div class="container">
+      <div class="title">我们的产品优势</div>
+      <div class="subtitle">全场景应用，更加智能</div>
+
+      <ul class="products">
+        <li class="item">
+          <img src="../images/home/28.png">
+          <div class="name">真人语音</div>
+          <div class="desc">真人语音引擎、可按照客户需求定制甜美型专业型任您选择</div>
+        </li>
+
+        <li class="item">
+          <img src="../images/home/26.png">
+          <div class="name">问题学习</div>
+          <div class="desc">基于大数据算法通过多轮回话自我完善和学习话术</div>
+        </li>
+
+        <li class="item">
+          <img src="../images/home/11.png">
+          <div class="name">话术配置</div>
+          <div class="desc">开放对话管理引擎自主配置修改机器人话术和知识库</div>
+        </li>
+
+        <li class="item">
+          <img src="../images/home/17.png">
+          <div class="name">识别准确</div>
+          <div class="desc">准确挖掘用户需求、筛选用户意向、识别用户兴趣</div>
+        </li>
+
+        <li class="item">
+          <img src="../images/home/29.png">
+          <div class="name">支持打断</div>
+          <div class="desc">在机器人人说话过程中用户可以随时打断</div>
+        </li>
+
+        <li class="item">
+          <img src="../images/home/7.png">
+          <div class="name">多轮对话</div>
+          <div class="desc">领先的多轮会话技术、时间预约、身份验证等场景</div>
+        </li>
+
+        <li class="item">
+          <img src="../images/home/30.png">
+          <div class="name">自动拨打</div>
+          <div class="desc">客户资料一键批量导入，随心设定自动拨打参数</div>
+        </li>
+
+        <li class="item">
+          <img src="../images/home/25.png">
+          <div class="name">微信推送</div>
+          <div class="desc">绑定微信将有意向的客户推送到客户经理的微信</div>
+        </li>
+
+        <li class="item">
+          <img src="../images/home/9.png">
+          <div class="name">沟通记录</div>
+          <div class="desc">通话录音、识别文本自动存取，客户业务关注点自动标出</div>
+        </li>
+
+        <li class="item">
+          <img src="../images/home/14.png">
+          <div class="name">客户分级</div>
+          <div class="desc">准确识别客户意向，自动标注客户等级</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section solution">
+    <div class="title">可定制全行业解决方案</div>
+
+    <div class="solutions">
+      <div class="item">
+        <div class="type">金融</div>
+        <div class="item-name">金融贷款</div>
+        <div class="item-name">金融理财</div>
+        <div class="item-name">金融催收</div>
+      </div>
+
+      <div class="item">
+        <div class="type">地产</div>
+        <div class="item-name">金融贷款</div>
+        <div class="item-name">金融理财</div>
+        <div class="item-name">金融催收</div>
+      </div>
+      <div class="item">
+        <div class="type">保险</div>
+        <div class="item-name">新客开发</div>
+        <div class="item-name">续保提醒</div>
+        <div class="item-name">新品推荐</div>
+      </div>
+      <div class="item">
+        <div class="type">网络</div>
+        <div class="item-name">媒体广告</div>
+        <div class="item-name">网络推广</div>
+        <div class="item-name">合作伙伴</div>
+      </div>
+      <div class="item">
+        <div class="type">教育</div>
+        <div class="item-name">培训机构</div>
+        <div class="item-name">自考招生</div>
+        <div class="item-name">课程介绍</div>
+      </div>
+      <div class="item">
+        <div class="type">电商</div>
+        <div class="item-name">客户关怀</div>
+        <div class="item-name">订单提醒</div>
+        <div class="item-name">活动促销</div>
+      </div>
+      <div class="item">
+        <div class="type">汽车</div>
+        <div class="item-name">售后服务</div>
+        <div class="item-name">定期保养</div>
+        <div class="item-name">满意回访</div>
+      </div>
+      <div class="item">
+        <div class="type">广告</div>
+        <div class="item-name">产品推销</div>
+        <div class="item-name">问卷调查</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section trial">
+    <div class="trial-btn">
+      点击免费体验
+    </div>
+  </div>
+
+  <div class="section service">
+    <div class="container">
+      <div class="title">7X24小时上岗</div>
+      <div class="subtitle">您将拥有一个不请假、不离职、不抱怨的好员工</div>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="../images/home/12.png">
+        </div>
+        <div class="col-md-3">
+          <img src="../images/home/13.png">
+        </div>
+        <div class="col-md-3">
+          <img src="../images/home/12.png">
+        </div>
+        <div class="col-md-3">
+          <img src="../images/home/13.png">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-
+<%- include('_global/foot') %>

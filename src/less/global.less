@@ -3,15 +3,13 @@ html, body {
   position: relative;
   width: 100%;
   min-height: 100%;
-  //margin-top: @header-height;
   overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 body{
   padding-top: @header-height;
-  zoom: 0.8 !important;
 }
-
 
 p {
   margin: 0 0;
@@ -20,22 +18,16 @@ p {
 .navbar {
   min-height: @header-height;
   margin-bottom: 0;
+  background-color: #09112b;
+  box-sizing: border-box;
+  border-bottom: solid 2px #20bbbe;
   .navbar-header {
     .navbar-brand {
       height: @header-height;
       line-height: @header-height;
       padding: 0;
-      margin-right: 130px;
-
-      img {
-        display: inline;
-      }
       .site-logo {
-        width: 50px;
-        height: 50px;
-      }
-      .site-logo_name{
-        height: 50px;
+        max-height: 50px;
       }
     }
     .navbar-toggle {
@@ -43,6 +35,7 @@ p {
     }
   }
   .navbar-collapse {
+    float: right;
     .navbar-nav {
       position: relative;
       li {
@@ -54,40 +47,28 @@ p {
           .nav_title {
             padding: 36px 3px;
             text-align: center;
-
-            p:first-child {
+            p {
+              font-family: 'Regular' ;
               font-size: 18px;
-              color: #333333;
-              font-size:18px;
-              font-family:'STSongti-SC-Bold';
-              color:rgba(51,51,51,1);
-              line-height:25px;
-            }
-            p:last-child {
-              font-size: 10px;
-              color: #999999;
-              margin-top: 5px;
-              font-family: 'Athelas-Regular';
+              color: #ffffff;
             }
           }
         }
 
         &.active,
         &:hover {
-          color: #BF885E;
+          border-bottom: solid 2px #BF885E;
 
           a {
             background: transparent;
 
             .nav_title {
-              p:first-child {
-                color: #BF885E;
-              }
-              p:last-child {
+              p {
                 color: #BF885E;
               }
             }
           }
+          
         }
 
         &::after {
