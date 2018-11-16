@@ -1,0 +1,65 @@
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content my-modal">
+      <div class="modal-header">
+        <ul class="header-tabs">
+          <li class="trial active" onclick="showModal(1)">试用</li>
+          <li class="cooperate" onclick="showModal(2)">合作</li>
+        </ul>
+      </div>
+      <div class="modal-body">
+        <div class="form trial">
+          <div class="field">
+            <input placeholder="请填写您的姓名">
+          </div>
+          <div class="field">
+            <input placeholder="请填写您的手机">
+          </div>
+          <div class="field sms">
+            <input placeholder="短信验证码">
+
+            <div class="sms-btn">点击获取短信</div>
+          </div>
+          <div class="submit-btn">提交</div>
+        </div>
+
+        <div class="form cooperate">
+          <div class="field">
+            <input placeholder="请输入您的邮箱">
+          </div>
+          <div class="field">
+            <input placeholder="请填写您的公司名称">
+          </div>
+          <div class="field">
+            <input placeholder="请填写您的姓名">
+          </div>
+          <div class="field">
+            <input placeholder="请填写公司地址">
+          </div>
+          <div class="field">
+            <input placeholder="请填写您的手机号码">
+          </div>
+          <div class="submit-btn">提交</div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+<script>
+  function showModal(type) {
+    $('#myModal').modal('show');
+    $(".header-tabs>li").removeClass("active");
+    if (type == 1) {
+      $(".trial").addClass("active");
+      $(".form.trial").show();
+      $(".form.cooperate").hide();
+    } else {
+      $(".cooperate").addClass("active");
+      $(".form.trial").hide();
+      $(".form.cooperate").show();
+    }
+  }
+
+</script>

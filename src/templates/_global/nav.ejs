@@ -18,27 +18,27 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="<%= nav.name === 'index' ? 'active' : '' %>">
-            <a href="#index">
+            <a href="/index.html">
               <div class="nav_title">
                 <p>首页</p>
               </div>
             </a>
           </li>
-          <li class="<%= nav.name === 'market' ? 'active' : '' %>">
-            <a href="#product">
+          <li class="<%= nav.name === 'product' ? 'active' : '' %>">
+            <a href="/product.html">
               <div class="nav_title">
                 <p>产品介绍</p>
               </div>
             </a>
           </li>
-          <li class="<%= nav.name === 'museum' ? 'active' : '' %>">
+          <li onclick="showModal(1)">
             <a href="#apply">
               <div class="nav_title">
                 <p>申请试用</p>
               </div>
             </a>
           </li>
-          <li class="<%= nav.name === 'painting' ? 'active' : '' %>">
+          <li onclick="showModal(2)">
             <a href="#join">
               <div class="nav_title">
                 <p>机器人加盟</p>

@@ -1,13 +1,13 @@
-.wrapper{
+.wrapper {
   .section {
     text-align: center;
     background-color: #fff;
 
-    &.banner{
+    &.banner {
       background-color: #0d123c;
       padding-bottom: 90px;
       color: #fff;
-      .text{
+      .text {
         padding-top: 150px;
         padding-left: 20px;
         text-align: left;
@@ -16,17 +16,17 @@
           font-weight: bold;
           margin-bottom: 30px;
         }
-  
-        .subtitle{
+
+        .subtitle {
           font-size: 28px;
         }
-  
-        .functions{
+
+        .functions {
           list-style: none;
           display: block;
           margin-top: 70px;
           padding: 0;
-          li{
+          li {
             display: inline-block;
             text-align: left;
             width: 20%;
@@ -34,7 +34,7 @@
           }
         }
 
-        .trial{
+        .trial {
           display: inline-block;
           width: 350px;
           height: 50px;
@@ -47,10 +47,10 @@
           margin-top: 20px;
         }
       }
-    
-      .image{
+
+      .image {
         padding-top: 130px;
-        .image-circle{
+        .image-circle {
           position: relative;
           width: 360px;
           height: 360px;
@@ -68,7 +68,7 @@
             height: 360px;
             left: 0;
           }
-          .background{
+          .background {
             position: absolute;
             width: 290px;
             left: 25px;
@@ -78,24 +78,23 @@
       }
     }
 
-    &.function{
-      .functions{
+    &.function {
+      .functions {
         list-style: none;
         display: block;
-        &-item{
+        &-item {
           display: inline-block;
           width: 20%;
           margin: 30px 0;
           text-align: left;
           padding-right: 40px;
 
-          .title{
+          .title {
             font-size: 20px;
             color: #ff9000;
             line-height: 36px;
-            
           }
-          .desc{
+          .desc {
             color: #666666;
             font-size: 16px;
             line-height: 26px;
@@ -104,22 +103,21 @@
       }
     }
 
-
-    &.voice{
+    &.voice {
       background-color: #f1f1f2;
       padding-bottom: 30px;
       padding-top: 40px;
-      .title{
+      .title {
         font-size: 36px;
         margin: 30px;
       }
 
       .voices {
-        .voices-item{
+        .voices-item {
           position: relative;
           margin-bottom: 20px;
           cursor: pointer;
-          &::after{
+          &::after {
             content: "";
             position: absolute;
             top: 0;
@@ -127,16 +125,16 @@
             left: 0;
             right: 0;
             background-color: #f1a612;
-            opacity: .7;
+            opacity: 0.7;
             display: none;
           }
-          &:hover::after{
+          &:hover::after {
             display: block;
           }
           img {
             width: 100%;
           }
-          .name{
+          .name {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -149,24 +147,23 @@
       }
     }
 
-
-    &.product{
-      .title{
+    &.product {
+      .title {
         font-size: 26px;
         margin-top: 80px;
       }
 
-      .subtitle{
+      .subtitle {
         color: #858586;
         font-size: 18px;
         margin-bottom: 80px;
         margin-top: 10px;
       }
 
-      .products{
+      .products {
         list-style: none;
-        .item{
-          display: inline-block;
+        .item {
+          float: left;
           margin-bottom: 50px;
           padding: 0 15px;
           box-sizing: border-box;
@@ -176,20 +173,20 @@
             height: 70px;
           }
 
-          .name{
+          .name {
             font-size: 16px;
             font-weight: bold;
             margin: 10px;
           }
-          .desc{
+          .desc {
             color: #858586;
           }
         }
       }
     }
 
-    &.solution{
-      .title{
+    &.solution {
+      .title {
         font-size: 26px;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -197,32 +194,32 @@
       }
 
       .solutions {
-        .item{
+        .item {
           width: 12.5%;
-          display: inline-block;
+          float: left;
           padding-top: 100px;
           padding-bottom: 70px;
           background: linear-gradient(top, #3bf3f2, #2e88f8);
           vertical-align: text-top;
           height: 250px;
           color: #fff;
-          .type{
+          .type {
             font-size: 18px;
             margin-bottom: 10px;
           }
 
-          .item-name{
+          .item-name {
             font-size: 16px;
             line-height: 24px;
           }
         }
       }
 
-      .trial{
+      .trial {
         background-color: #f1f1f2;
-        padding: 30px;
+        padding: 70px;
         text-align: center;
-        .trial-btn{
+        .trial-btn {
           display: inline-block;
           width: 300px;
           height: 50px;
@@ -232,25 +229,89 @@
           background-color: #6a19e1;
           color: #fff;
           border-radius: 25px;
+          cursor: pointer;
         }
       }
     }
 
-    &.service{
+    &.service {
       margin-bottom: 150px;
-      .title{
+      .title {
         font-size: 26px;
         margin-top: 80px;
       }
 
-      .subtitle{
+      .subtitle {
         color: #858586;
         font-size: 18px;
         margin-bottom: 80px;
         margin-top: 10px;
       }
-
     }
   }
-
 }
+
+.animated {
+  &.second-1 {
+    animation-delay: 0.5s;
+  }
+  &.second-2 {
+    animation-delay: 1s;
+  }
+  &.second-3 {
+    animation-delay: 1.5s;
+  }
+  &.second-4 {
+    animation-delay: 2s;
+  }
+  &.second-5 {
+    animation-delay: 2.5s;
+  }
+  &.second-6{
+    animation-delay: 3s;
+  }
+
+  &.loop{
+    animation-iteration-count: infinite;
+  }
+}
+
+.animated-circle {
+  transform-origin: 50% 50%;
+  animation: circle 10s normal infinite linear;
+}
+
+.animated-circle.anti {
+  animation: circle-anti 10s normal infinite linear;
+}
+
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle-anti {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+.modal-content {
+  margin-top: 30%;
+}
+
