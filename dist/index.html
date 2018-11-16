@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>
+    首页 -
+    小蜜机器人
+  </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link type="favicon" rel="shortcut icon" href="images/favicon.ico" />
+
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+  
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+
+  
+  <link rel="stylesheet" href="./styles.css">
+  
+</head>
+
+<body>
+  <div id="header"></div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="row">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">
+          <div>
+            <img src="images/home/4.png" class="site-logo" alt="logo">
+          </div>
+        </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="/index.html">
+              <div class="nav_title">
+                <p>首页</p>
+              </div>
+            </a>
+          </li>
+          <li class="">
+            <a href="/product.html">
+              <div class="nav_title">
+                <p>产品介绍</p>
+              </div>
+            </a>
+          </li>
+          <li onclick="showModal(1)">
+            <a href="#apply">
+              <div class="nav_title">
+                <p>申请试用</p>
+              </div>
+            </a>
+          </li>
+          <li onclick="showModal(2)">
+            <a href="#join">
+              <div class="nav_title">
+                <p>机器人加盟</p>
+              </div>
+            </a>
+          </li>
+          <li class="">
+            <a href="#robot">
+              <div class="nav_title">
+                <p>AI机器人</p>
+              </div>
+            </a>
+          </li>
+          <li class="">
+            <a href="#trial">
+              <div class="nav_title">
+                <p>免费体验</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="wrapper">
+  <div class="section banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text">
+          <div class="title">小蜜AI机器人</div>
+          <div class="subtitle">永不疲倦的电销专员，3秒标记精准意向客户</div>
+          <ul class="functions">
+            <li class="wow animated bounceInLeft second-1">话术定制</li>
+            <li class="wow animated bounceInLeft second-2">智能标记</li>
+            <li class="wow animated bounceInLeft second-3">全真人声</li>
+            <li class="wow animated bounceInLeft second-4">免费试用</li>
+          </ul>
+          <div class="trial wow animated bounceInLeft">点击免费体验</div>
+        </div>
+        <div class="col-md-4 image">
+          <div class="image-circle">
+            <img src="../images/home/1.png" class="background ">
+            <img src="../images/home/2.png" class="inner animated-circle anti">
+            <img src="../images/home/3.png" class="outer animated-circle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section function">
+    <div class="container">
+      <div class="row">
+        <ul class="functions">
+          <li class="functions-item wow animated bounceInRight second-1">
+            <div class="title">真人语音</div>
+            <div class="desc">真人语音颠覆传统死板的机器人发音</div>
+          </li>
+          <li class="functions-item wow animated bounceInRight second-2">
+            <div class="title">智能学习</div>
+            <div class="desc">基于大数据算法通过问题学习自我完善话术</div>
+          </li>
+          <li class="functions-item wow animated bounceInRight second-3">
+            <div class="title">情绪判断</div>
+            <div class="desc">通过客户语气情绪识别客户的意向</div>
+          </li>
+          <li class="functions-item wow animated bounceInRight second-4">
+            <div class="title">数据分析</div>
+            <div class="desc">通过人工智能算法准确筛选意向客户</div>
+          </li>
+          <li class="functions-item wow animated bounceInRight second-5">
+            <div class="title">算法模型</div>
+            <div class="desc">定制个性化话术模型智能匹配相关话术</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="section voice">
+    <div class="container">
+      <div class="title wow animated bounceInUp">真实通话试听</div>
+      <div class="row voices">
+        <div class="col-md-3 ">
+          <div class="voices-item wow animated fadeInUp second-1">
+            <img src="../images/home/18.png">
+            <div class="name">教育行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item wow animated fadeInUp second-2">
+            <img src="../images/home/19.png">
+            <div class="name">房产行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item wow animated fadeInUp second-3">
+            <img src="../images/home/20.png">
+            <div class="name">教育行业</div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="voices-item wow animated fadeInUp second-4">
+            <img src="../images/home/21.png">
+            <div class="name">品牌推广</div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="voices-item wow animated fadeInUp second-1">
+            <img src="../images/home/22.png">
+            <div class="name">装修行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item wow animated fadeInUp second-2">
+            <img src="../images/home/23.png">
+            <div class="name">房产行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item wow animated fadeInUp second-3">
+            <img src="../images/home/23.png">
+            <div class="name">教育行业</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="voices-item wow animated fadeInUp second-4">
+            <img src="../images/home/24.png">
+            <div class="name">品牌推广</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section product">
+    <div class="container">
+      <div class="title wow animated bounceInUp">我们的产品优势</div>
+      <div class="subtitle wow animated bounceInUp">全场景应用，更加智能</div>
+
+      <ul class="products">
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/28.png">
+          <div class="name">真人语音</div>
+          <div class="desc">真人语音引擎、可按照客户需求定制甜美型专业型任您选择</div>
+        </li>
+
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/26.png">
+          <div class="name">问题学习</div>
+          <div class="desc">基于大数据算法通过多轮回话自我完善和学习话术</div>
+        </li>
+
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/11.png">
+          <div class="name">话术配置</div>
+          <div class="desc">开放对话管理引擎自主配置修改机器人话术和知识库</div>
+        </li>
+
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/17.png">
+          <div class="name">识别准确</div>
+          <div class="desc">准确挖掘用户需求、筛选用户意向、识别用户兴趣</div>
+        </li>
+
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/29.png">
+          <div class="name">支持打断</div>
+          <div class="desc">在机器人人说话过程中用户可以随时打断</div>
+        </li>
+
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/7.png">
+          <div class="name">多轮对话</div>
+          <div class="desc">领先的多轮会话技术、时间预约、身份验证等场景</div>
+        </li>
+
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/30.png">
+          <div class="name">自动拨打</div>
+          <div class="desc">客户资料一键批量导入，随心设定自动拨打参数</div>
+        </li>
+
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/25.png">
+          <div class="name">微信推送</div>
+          <div class="desc">绑定微信将有意向的客户推送到客户经理的微信</div>
+        </li>
+
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/9.png">
+          <div class="name">沟通记录</div>
+          <div class="desc">通话录音、识别文本自动存取，客户业务关注点自动标出</div>
+        </li>
+
+        <li class="item wow animated zoomIn">
+          <img src="../images/home/14.png">
+          <div class="name">客户分级</div>
+          <div class="desc">准确识别客户意向，自动标注客户等级</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section solution ">
+    <div class="title wow animated bounceInUp">可定制全行业解决方案</div>
+
+    <div class="solutions clearfloat">
+      <div class="item">
+        <div class="type">金融</div>
+        <div class="item-name">金融贷款</div>
+        <div class="item-name">金融理财</div>
+        <div class="item-name">金融催收</div>
+      </div>
+
+      <div class="item">
+        <div class="type">地产</div>
+        <div class="item-name">金融贷款</div>
+        <div class="item-name">金融理财</div>
+        <div class="item-name">金融催收</div>
+      </div>
+      <div class="item">
+        <div class="type">保险</div>
+        <div class="item-name">新客开发</div>
+        <div class="item-name">续保提醒</div>
+        <div class="item-name">新品推荐</div>
+      </div>
+      <div class="item">
+        <div class="type">网络</div>
+        <div class="item-name">媒体广告</div>
+        <div class="item-name">网络推广</div>
+        <div class="item-name">合作伙伴</div>
+      </div>
+      <div class="item">
+        <div class="type">教育</div>
+        <div class="item-name">培训机构</div>
+        <div class="item-name">自考招生</div>
+        <div class="item-name">课程介绍</div>
+      </div>
+      <div class="item">
+        <div class="type">电商</div>
+        <div class="item-name">客户关怀</div>
+        <div class="item-name">订单提醒</div>
+        <div class="item-name">活动促销</div>
+      </div>
+      <div class="item">
+        <div class="type">汽车</div>
+        <div class="item-name">售后服务</div>
+        <div class="item-name">定期保养</div>
+        <div class="item-name">满意回访</div>
+      </div>
+      <div class="item">
+        <div class="type">广告</div>
+        <div class="item-name">产品推销</div>
+        <div class="item-name">问卷调查</div>
+      </div>
+    </div>
+
+    <div class="trial">
+      <div class="trial-btn wow animated pulse loop">
+        点击免费体验
+      </div>
+    </div>
+  </div>
+
+  <div class="section service">
+    <div class="container">
+      <div class="title wow animated bounceInUp">7X24小时上岗</div>
+      <div class="subtitle">您将拥有一个不请假、不离职、不抱怨的好员工</div>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="../images/home/12.png" class="wow animated rotateIn second-1">
+        </div>
+        <div class="col-md-3">
+          <img src="../images/home/13.png" class="wow animated rotateIn second-2">
+        </div>
+        <div class="col-md-3">
+          <img src="../images/home/12.png" class="wow animated rotateIn second-3">
+        </div>
+        <div class="col-md-3">
+          <img src="../images/home/13.png" class="wow animated rotateIn second-4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="logo">
+      <img src="../../images/home/4.png">
+    </div>
+    <div class="row content">
+      <div class="col-md-4">
+        <div class="title">产品</div>
+        <div class="menu-name">使用教程</div>
+        <div class="menu-name">快速入门</div>
+      </div>
+      <div class="col-md-4">
+        <div class="title">关于</div>
+        <div class="contracts">
+          <div class="contract-title">
+            联系我们
+          </div>
+          <div class="contract-phones">
+            <p>17367055558</p>
+            <p>18657178895</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="title">关注我们</div>
+        <div class="code">
+          <img src="../../images/home/8.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<script defer="defer" src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<script defer="defer" src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script defer="defer" src="/static/js/wow.js"></script>
+
+
+
+<script defer="defer" src="./index.bundle.js"></script>
+
+
+
+
+</body>
+</html>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content my-modal">
+      <div class="modal-header">
+        <ul class="header-tabs">
+          <li class="trial active" onclick="showModal(1)">试用</li>
+          <li class="cooperate" onclick="showModal(2)">合作</li>
+        </ul>
+      </div>
+      <div class="modal-body">
+        <div class="form trial">
+          <div class="field">
+            <input placeholder="请填写您的姓名">
+          </div>
+          <div class="field">
+            <input placeholder="请填写您的手机">
+          </div>
+          <div class="field sms">
+            <input placeholder="短信验证码">
+
+            <div class="sms-btn">点击获取短信</div>
+          </div>
+          <div class="submit-btn">提交</div>
+        </div>
+
+        <div class="form cooperate">
+          <div class="field">
+            <input placeholder="请输入您的邮箱">
+          </div>
+          <div class="field">
+            <input placeholder="请填写您的公司名称">
+          </div>
+          <div class="field">
+            <input placeholder="请填写您的姓名">
+          </div>
+          <div class="field">
+            <input placeholder="请填写公司地址">
+          </div>
+          <div class="field">
+            <input placeholder="请填写您的手机号码">
+          </div>
+          <div class="submit-btn">提交</div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+<script>
+  function showModal(type) {
+    $('#myModal').modal('show');
+    $(".header-tabs>li").removeClass("active");
+    if (type == 1) {
+      $(".trial").addClass("active");
+      $(".form.trial").show();
+      $(".form.cooperate").hide();
+    } else {
+      $(".cooperate").addClass("active");
+      $(".form.trial").hide();
+      $(".form.cooperate").show();
+    }
+  }
+
+</script>
+
