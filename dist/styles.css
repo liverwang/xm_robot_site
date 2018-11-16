@@ -153,6 +153,80 @@ p {
 .clearfloat {
   zoom: 1;
 }
+.helper {
+  position: fixed;
+  right: 0;
+  top: 200px;
+  width: 90px;
+  background-color: #18235a;
+  color: #fff;
+}
+.helper ul {
+  list-style: none;
+  padding: 0;
+}
+.helper ul li {
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.helper ul li img {
+  width: 33px;
+  height: 33px;
+}
+.helper ul li .title {
+  margin-top: 10px;
+}
+.helper ul li .chat-code {
+  width: 180px;
+  height: 180px;
+  padding: 15px;
+  position: absolute;
+  right: -200px;
+  top: -50px;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: -2px 0px 5px 2px #ddd;
+          box-shadow: -2px 0px 5px 2px #ddd;
+}
+.helper ul li .chat-code img {
+  width: 100%;
+  height: 100%;
+}
+.helper ul li .contrat-us {
+  width: 180px;
+  padding: 15px;
+  position: absolute;
+  right: -200px;
+  top: -15px;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: -2px 0px 5px 2px #ddd;
+          box-shadow: -2px 0px 5px 2px #ddd;
+  color: #333333;
+  line-height: 20px;
+  text-align: left;
+}
+.helper ul li .contrat-us .title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 10px 0;
+}
+.helper ul li:hover {
+  background-color: #18235a;
+}
+.helper ul li:hover .chat-code,
+.helper ul li:hover .contrat-us {
+  right: 90px;
+}
 /* mixins */
 .footer {
   padding-top: 60px;
@@ -652,6 +726,7 @@ p {
 }
 .product-wrapper .section.service .service-list .service-item {
   height: 130px;
+  padding-left: 15px;
 }
 .product-wrapper .section.service .service-list .service-item .name {
   color: #333333;
