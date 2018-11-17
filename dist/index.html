@@ -86,7 +86,7 @@
               </div>
             </a>
           </li>
-          <li class="">
+          <li  onclick="showModal(1)">
             <a href="#trial">
               <div class="nav_title">
                 <p>免费体验</p>
@@ -113,13 +113,13 @@
             <li class="wow animated bounceInLeft second-3">全真人声</li>
             <li class="wow animated bounceInLeft second-4">免费试用</li>
           </ul>
-          <div class="trial wow animated bounceInLeft">点击免费体验</div>
+          <div class="trial wow animated bounceInLeft" onclick="showModal(1)">点击免费体验</div>
         </div>
         <div class="col-md-4 image">
           <div class="image-circle">
-            <img src="images/home/1.png" class="background ">
             <img src="images/home/2.png" class="inner animated-circle anti">
             <img src="images/home/3.png" class="outer animated-circle">
+            <img src="images/home/1.png" class="background ">
           </div>
         </div>
       </div>
@@ -164,24 +164,28 @@
           <div class="voices-item wow animated fadeInUp second-1">
             <img src="images/home/18.png">
             <div class="name">教育行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-1.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-2">
             <img src="images/home/19.png">
             <div class="name">房产行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-2.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-3">
             <img src="images/home/20.png">
             <div class="name">教育行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-3.mp3')">
           </div>
         </div>
         <div class="col-md-3 ">
           <div class="voices-item wow animated fadeInUp second-4">
             <img src="images/home/21.png">
             <div class="name">品牌推广</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-4.mp3')">
           </div>
         </div>
 
@@ -189,24 +193,28 @@
           <div class="voices-item wow animated fadeInUp second-1">
             <img src="images/home/22.png">
             <div class="name">装修行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-5.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-2">
             <img src="images/home/23.png">
             <div class="name">房产行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-6.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-3">
             <img src="images/home/23.png">
             <div class="name">教育行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-7.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-4">
             <img src="images/home/24.png">
             <div class="name">品牌推广</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-8.mp3')">
           </div>
         </div>
       </div>
@@ -338,7 +346,7 @@
     </div>
 
     <div class="trial">
-      <div class="trial-btn wow animated pulse loop">
+      <div class="trial-btn wow animated pulse loop" onclick="showModal(1)">
         点击免费体验
       </div>
     </div>
@@ -376,6 +384,7 @@
         <div class="title">产品</div>
         <div class="menu-name">使用教程</div>
         <div class="menu-name">快速入门</div>
+
       </div>
       <div class="col-md-4">
         <div class="title">关于</div>
@@ -395,6 +404,11 @@
           <img src="images/home/8.png">
         </div>
       </div>
+    </div>
+
+    <div class="row copyright" >
+      <span>Copyright 杭州蜜蜡科技有限公司 浙ICP备18048163号</span>
+      <span>地址：杭州市文一西路1338号海创大厦</span>
     </div>
   </div>
 
@@ -417,7 +431,6 @@
 
 </body>
 </html>
-
 
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
@@ -485,6 +498,25 @@
 
 </script>
 
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="audioModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content my-modal">
+      <div class="modal-body">
+          <audio id="audio" autoplay="autoplay" controls style="width:100%;" ></audio>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+<script>
+  function play(src) {
+    $('#audioModal').modal('show');
+    var audio = document.getElementById("audio");
+    audio.src = src;
+    audio.play();
+  }
+</script>
 
 <div class="helper">
   <ul>
@@ -496,10 +528,10 @@
       <img src="images/home/6.png">
       <div class="title">代理加盟</div>
     </li>
-    <li>
+    <!-- <li>
       <img src="images/home/27.png">
       <div class="title">在线咨询</div>
-    </li>
+    </li> -->
     <li>
       <img src="images/home/10.png">
       <div class="title">关注微信</div>

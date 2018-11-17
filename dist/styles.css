@@ -253,6 +253,12 @@ p {
 .footer .content .contracts .contract-phones {
   float: right;
 }
+.footer .copyright {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
 .wrapper .section {
   text-align: center;
   background-color: #fff;
@@ -373,7 +379,8 @@ p {
   opacity: 0.7;
   display: none;
 }
-.wrapper .section.voice .voices .voices-item:hover::after {
+.wrapper .section.voice .voices .voices-item:hover::after,
+.wrapper .section.voice .voices .voices-item:hover .play {
   display: block;
 }
 .wrapper .section.voice .voices .voices-item img {
@@ -387,6 +394,18 @@ p {
   font-size: 20px;
   margin-left: -35px;
   font-weight: bold;
+}
+.wrapper .section.voice .voices .voices-item .play {
+  position: absolute;
+  z-index: 10;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  margin-top: -40px;
+  margin-left: -40px;
+  display: none;
 }
 .wrapper .section.product .title {
   font-size: 26px;

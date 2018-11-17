@@ -14,13 +14,13 @@
             <li class="wow animated bounceInLeft second-3">全真人声</li>
             <li class="wow animated bounceInLeft second-4">免费试用</li>
           </ul>
-          <div class="trial wow animated bounceInLeft">点击免费体验</div>
+          <div class="trial wow animated bounceInLeft" onclick="showModal(1)">点击免费体验</div>
         </div>
         <div class="col-md-4 image">
           <div class="image-circle">
-            <img src="images/home/1.png" class="background ">
             <img src="images/home/2.png" class="inner animated-circle anti">
             <img src="images/home/3.png" class="outer animated-circle">
+            <img src="images/home/1.png" class="background ">
           </div>
         </div>
       </div>
@@ -65,24 +65,28 @@
           <div class="voices-item wow animated fadeInUp second-1">
             <img src="images/home/18.png">
             <div class="name">教育行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-1.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-2">
             <img src="images/home/19.png">
             <div class="name">房产行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-2.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-3">
             <img src="images/home/20.png">
             <div class="name">教育行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-3.mp3')">
           </div>
         </div>
         <div class="col-md-3 ">
           <div class="voices-item wow animated fadeInUp second-4">
             <img src="images/home/21.png">
             <div class="name">品牌推广</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-4.mp3')">
           </div>
         </div>
 
@@ -90,24 +94,28 @@
           <div class="voices-item wow animated fadeInUp second-1">
             <img src="images/home/22.png">
             <div class="name">装修行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-5.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-2">
             <img src="images/home/23.png">
             <div class="name">房产行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-6.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-3">
             <img src="images/home/23.png">
             <div class="name">教育行业</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-7.mp3')">
           </div>
         </div>
         <div class="col-md-3">
           <div class="voices-item wow animated fadeInUp second-4">
             <img src="images/home/24.png">
             <div class="name">品牌推广</div>
+            <img src="images/home/5.png" class="play" onclick="play('static/res/audition-8.mp3')">
           </div>
         </div>
       </div>
@@ -239,7 +247,7 @@
     </div>
 
     <div class="trial">
-      <div class="trial-btn wow animated pulse loop">
+      <div class="trial-btn wow animated pulse loop" onclick="showModal(1)">
         点击免费体验
       </div>
     </div>
@@ -268,7 +276,6 @@
 </div>
 
 <%- include('_global/foot') %>
-
 <%- include('_global/modal') %>
-
+<%- include('_global/play') %>
 <%- include('_global/helper') %>

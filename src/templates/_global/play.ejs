@@ -1,0 +1,19 @@
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="audioModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content my-modal">
+      <div class="modal-body">
+          <audio id="audio" autoplay="autoplay" controls style="width:100%;" ></audio>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+<script>
+  function play(src) {
+    $('#audioModal').modal('show');
+    var audio = document.getElementById("audio");
+    audio.src = src;
+    audio.play();
+  }
+</script>

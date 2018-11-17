@@ -128,8 +128,10 @@
             opacity: 0.7;
             display: none;
           }
-          &:hover::after {
-            display: block;
+          &:hover{
+            &::after, .play{
+              display: block;
+            }
           }
           img {
             width: 100%;
@@ -143,7 +145,21 @@
             margin-left: -35px;
             font-weight: bold;
           }
+
+          .play{
+            position: absolute;
+            z-index: 10;
+            width: 80px;
+            height: 80px;
+            top: 50%;
+            left: 50%;
+            cursor: pointer;
+            margin-top: -40px;
+            margin-left: -40px;
+            display: none;
+          }
         }
+
       }
     }
 
