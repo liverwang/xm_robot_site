@@ -255,6 +255,7 @@ p {
 }
 .footer .copyright {
   position: absolute;
+  left: 0;
   bottom: 15px;
   width: 100%;
   text-align: center;
